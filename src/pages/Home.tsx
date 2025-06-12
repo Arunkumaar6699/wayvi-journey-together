@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
@@ -6,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import BottomNavigation from '@/components/BottomNavigation';
-import { Search, MapPin, Calendar, Users, Star, ArrowRight } from 'lucide-react';
+import { Search, MapPin, Calendar, Bell, Star, ArrowRight } from 'lucide-react';
 
 const Home = () => {
   const { user } = useAuth();
@@ -59,7 +58,7 @@ const Home = () => {
             <p className="text-white/80 text-sm">Ready for your next ride?</p>
           </div>
           <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-            <Users className="text-white" size={20} />
+            <Bell className="text-white" size={20} />
           </div>
         </div>
 
